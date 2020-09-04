@@ -5,6 +5,10 @@ def join_nested_strings(src)
   
   src.length.times do |x|
     src[x].length.times do |y|
-      
-  
+      if src[x][y].is_a? String
+        string_array << src[x][y]
+      end
+    end
+  end
+  string_array.join(" ")
 end
